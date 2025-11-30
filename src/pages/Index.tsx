@@ -233,7 +233,7 @@ const Index = () => {
                   <div className="text-red-500">МГПУ</div>
                 </div>
               </div>
-              <nav className="hidden lg:flex space-x-8 text-sm font-bold text-gray-900">
+              <nav className="flex space-x-8 text-sm font-bold text-gray-900">
                 <a href="#" className="hover:text-primary transition-colors">АБИТУРИЕНТАМ</a>
                 <a href="#" className="hover:text-primary transition-colors">ОБ УНИВЕРСИТЕТЕ</a>
                 <a href="#" className="hover:text-primary transition-colors">ОБРАЗОВАНИЕ</a>
