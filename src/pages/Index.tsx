@@ -196,35 +196,50 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-gray-100 border-b border-gray-200">
+      <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-2 text-sm">
-            <div className="flex items-center space-x-4 text-gray-600">
-              <a href="#" className="hover:text-gray-900">О ПОРТАЛЕ</a>
-              <a href="#" className="hover:text-gray-900">СОТРУДНИКИ</a>
-              <a href="#" className="hover:text-gray-900">ВЫПУСКНИКИ</a>
+          <div className="flex items-center justify-between py-3 text-xs">
+            <div className="flex items-center space-x-6 text-gray-700 font-medium">
+              <a href="#" className="hover:text-gray-900 transition-colors">СТУДЕНТАМ</a>
+              <a href="#" className="hover:text-gray-900 transition-colors">СОТРУДНИКАМ</a>
+              <a href="#" className="hover:text-gray-900 transition-colors">ВЫПУСКНИКАМ</a>
+              <button className="hover:text-gray-900 transition-colors">
+                <Icon name="User" size={16} />
+              </button>
             </div>
-            <div className="flex items-center space-x-4 text-gray-600">
-              <button className="hover:text-gray-900">🌐 RUS</button>
-              <button className="hover:text-gray-900">ENG</button>
-              <Icon name="Search" size={16} />
+            <div className="flex items-center space-x-6 text-gray-700">
+              <Icon name="Accessibility" size={18} />
+              <a href="#" className="hover:text-gray-900 transition-colors font-medium">НОВОСТИ</a>
+              <a href="#" className="hover:text-gray-900 transition-colors font-medium">СОБЫТИЯ</a>
+              <button className="hover:text-gray-900 transition-colors font-medium">ENG</button>
+              <button className="hover:text-gray-900 transition-colors font-medium">中文</button>
+              <button className="hover:text-gray-900 transition-colors font-medium">ESP</button>
+              <Icon name="Search" size={18} />
             </div>
           </div>
         </div>
       </div>
 
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
-            <div className="flex items-center space-x-8">
-              <img src="https://cdn.poehali.dev/files/b1f6889a-f6d0-436a-ba25-50d2cc288f63.png" alt="30 ЛЕТ" className="h-12 w-auto" />
-              <nav className="hidden lg:flex space-x-6 text-sm font-medium">
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">АБИТУРИЕНТАМ</a>
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">ОБ УНИВЕРСИТЕТЕ</a>
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">ОБРАЗОВАНИЕ</a>
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">НАУКА</a>
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">КУЛЬТУРА</a>
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">СПОРТ</a>
+          <div className="flex items-center justify-between py-5">
+            <div className="flex items-center space-x-12">
+              <div className="flex flex-col">
+                <div className="text-4xl font-bold text-primary leading-none">30</div>
+                <div className="text-[10px] text-gray-700 font-medium leading-tight">
+                  <div>МОСКОВСКИЙ</div>
+                  <div>ГОРОДСКОЙ</div>
+                  <div>УНИВЕРСИТЕТ</div>
+                  <div className="text-red-500">МГПУ</div>
+                </div>
+              </div>
+              <nav className="hidden lg:flex space-x-8 text-sm font-bold text-gray-900">
+                <a href="#" className="hover:text-primary transition-colors">АБИТУРИЕНТАМ</a>
+                <a href="#" className="hover:text-primary transition-colors">ОБ УНИВЕРСИТЕТЕ</a>
+                <a href="#" className="hover:text-primary transition-colors">ОБРАЗОВАНИЕ</a>
+                <a href="#" className="hover:text-primary transition-colors">НАУКА</a>
+                <a href="#" className="hover:text-primary transition-colors">КУЛЬТУРА</a>
+                <a href="#" className="hover:text-primary transition-colors">СПОРТ</a>
               </nav>
             </div>
           </div>
