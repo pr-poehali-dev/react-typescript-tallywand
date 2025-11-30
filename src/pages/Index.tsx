@@ -247,11 +247,11 @@ const Index = () => {
       </header>
 
       <section className="relative h-[500px] bg-cover bg-center" style={{ backgroundImage: `url('${heroSlides[currentSlide].image}')` }}>
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">{heroSlides[currentSlide].title}</h1>
-          <p className="text-xl mb-8">{heroSlides[currentSlide].subtitle}</p>
-          <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 border-2 border-white">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 tracking-wide">{heroSlides[currentSlide].title}</h1>
+          <p className="text-xl md:text-2xl mb-12 font-light">{heroSlides[currentSlide].subtitle}</p>
+          <Button size="lg" className="bg-transparent text-white hover:bg-white hover:text-gray-900 border-2 border-white px-12 py-6 text-base font-medium transition-all">
             {heroSlides[currentSlide].buttonText}
           </Button>
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
